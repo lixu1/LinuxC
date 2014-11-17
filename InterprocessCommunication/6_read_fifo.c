@@ -6,7 +6,8 @@
 #include <limits.h>
 #include <fcntl.h>
 #include <unistd.h>
-#define BUFES 100
+#define BUFES PIPE_BUF
+
 int main(void)
 {
 	int fd;
