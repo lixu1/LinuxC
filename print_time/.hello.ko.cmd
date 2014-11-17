@@ -1,0 +1,1 @@
+cmd_/home/lx/ubuntu/print_time/hello.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.13.0-27-generic/scripts/module-common.lds --build-id  -o /home/lx/ubuntu/print_time/hello.ko /home/lx/ubuntu/print_time/hello.o /home/lx/ubuntu/print_time/hello.mod.o

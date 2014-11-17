@@ -1,0 +1,15 @@
+foo=$(bar)
+bar=$(ugh)
+ugh=Huh?
+a=$(b)
+b=$(a)
+y:=$(x)bar
+x:=foo
+x?=aa
+all1:
+	echo $(foo)
+all2:
+	echo $(a)
+all3:
+	echo $(y)
+	echo $(x)

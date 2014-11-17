@@ -1,0 +1,9 @@
+result:=
+all:
+	result=$ { subst a, A, how are you,China? }
+	echo -n "the result is :="
+	echo $(result)
+	result=$ (patsubst %.mk,%.o,makefile.mk.mk a.mk)
+	echo -n "the result is :="
+	echo $(result)
+.PHONY:all

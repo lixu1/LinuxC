@@ -1,0 +1,8 @@
+comma:=,
+empty:=
+space:=$(empty) $(empty)
+var:=a b c
+bar:=
+all:
+	$(bar) = $(subst $(space) , $( comma) ,$( var))
+.PHONY:all

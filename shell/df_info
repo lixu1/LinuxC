@@ -1,0 +1,10 @@
+文件系统       1K-blocks    已用     可用 已用% 挂载点
+/dev/sda4       51663468 3886924 45129096    8% /
+none                   4       0        4    0% /sys/fs/cgroup
+udev              904976       4   904972    1% /dev
+tmpfs             183144    1104   182040    1% /run
+none                5120       0     5120    0% /run/lock
+none              915712     152   915560    1% /run/shm
+none              102400      44   102356    1% /run/user
+/dev/sda8         939096   35428   838748    5% /boot
+/dev/sda9       19097044  125564 17978356    1% /home

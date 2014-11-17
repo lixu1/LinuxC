@@ -1,0 +1,15 @@
+var1=
+var2=hello
+all:
+	echo $(var1)
+	echo $(var2) 
+ifndef $(var1)
+	var1=hello
+endif
+	echo $(var1)
+ifeq '$(var1)' '$(var2)'
+	echo "they are equal"
+else
+	echo "they are not equal"
+endif
+.PHONY: all

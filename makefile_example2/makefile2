@@ -1,0 +1,8 @@
+objects=hello.o
+edit:$(objects)
+	gcc -o edit $(objects)
+hello.o: hello.c
+	gcc -c hello.c
+clean :
+	rm edit $(objects)
+.PHONY:clean	
