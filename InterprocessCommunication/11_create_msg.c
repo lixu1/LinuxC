@@ -7,8 +7,8 @@ int main(void)
 {
 	int qid;
 	key_t key;
-	key=110;
-	qid=msgget(key,IPC_CREAT|066);
+	key=1121;
+	qid=msgget(key,IPC_CREAT|0666);
 	if(qid<0)
 	{
 		perror("msgget");

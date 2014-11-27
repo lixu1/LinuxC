@@ -9,6 +9,7 @@ int main(void)
 	int nsems=1;
 	int flags=0666;
 	struct sembuf buf;
+	system("ipcs -s");
 	sem_id=semget(IPC_PRIVATE,nsems,flags);
 	if(sem_id<0)
 	{
@@ -16,7 +17,7 @@ int main(void)
 		exit(1);
 	}
 	printf("successfully created a semaphore :%d\n",sem_id);
-	system("ipcs -s");
+	//system("ipcs -s");
 	buf.sem_num=0;
 	buf.sem_op=1;
 	buf.sem_flg=IPC_NOWAIT;
