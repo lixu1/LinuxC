@@ -1,0 +1,6 @@
+git log
+
+
+git reflog
+
+git reset --hard HEAD@{3}
