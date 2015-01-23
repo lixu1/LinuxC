@@ -7,3 +7,10 @@ LinuxC
 	编译环境：Ubuntu 12.04 64位操作系统，gcc version 4.4.7
 
 
+Ubuntu
+==========
+	ubuntu使用中遇到的问题及解决方案
+
+Shell
+=========
+	shell脚本的使用方法

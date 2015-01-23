@@ -1,6 +1,21 @@
 git log
+得到一系列commit日志记录
+例如：
+commit 9af6b7435628480d9b5a407dbb0ab642a85444c2
+Author: lixu1 <lixuat2014@gmail.com>
+Date:   Fri Jan 2 16:47:30 2015 +0800
 
+    file function
 
+然后使用git reset --hard 9af6b7435628480d9b5a407dbb0ab642a85444c2
+回滚到指定版本
+
+加入回滚失败
 git reflog
+得到：
+9af6b74 HEAD@{0}: commit: file function
+fb8dc38 HEAD@{1}: clone: from https://github.com/lixu1/LinuxC.git
 
-git reset --hard HEAD@{3}
+然后使用
+git reset --hard HEAD@{1}
+反回滚到指定版本
